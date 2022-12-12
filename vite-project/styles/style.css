@@ -18,6 +18,8 @@
 
 .header-animation {
     font-size: 60px;
+    color: white;
+    background-color: red;
     text-align: center;
 }
 
