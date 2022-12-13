@@ -8,8 +8,16 @@ html, body,*{
 }
 
 :root {
-    --light-blue:#2998ff;
+    --black: #000;
+    --light-blue: #2998ff;
+    --dark-blue: #135cc5;
+    --light-red: #f87171;
+    --dark-red: #dc2626;
+    --gray: #252c30;
 
+    /* Intentions */
+    --primary: var(--light-blue);
+    --secondary: var(--dark-blue);
 
     /* Typography */
     --h1: 7.594rem;
