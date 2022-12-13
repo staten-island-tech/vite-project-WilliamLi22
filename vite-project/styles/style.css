@@ -1,5 +1,56 @@
 @import url(variables.css);
 
+html, body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.6%;
+}
+
+:root {
+    --light-blue:#2998ff;
+
+
+    /* Typography */
+    --h1: 7.594rem;
+    --h2: 5.063rem;
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem;
+}
+
+.hero {
+background-color: var(--light-blue);
+}
+
+h1{
+    font-size: var(--h1);
+}
+
+h2{
+    font-size: var(--h2);
+}
+
+h3{
+    font-size: var(--h3);
+}
+
+h4{
+    font-size: var(--h4);
+}
+
+h5{
+    font-size: var(--h5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
 #app {
     font-family: Avenir, Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
