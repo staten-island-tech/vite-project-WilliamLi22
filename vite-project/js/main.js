@@ -7,6 +7,10 @@ AOS.init();
 
 console.log(menu);
 
+document.querySelector(".btn").addEventListener("click", function(){
+    console.log(works);
+});
+
 //create an array of object (menu)
 //create function to inject mennu item
 //iterate (foreach) over array and insert HTML
