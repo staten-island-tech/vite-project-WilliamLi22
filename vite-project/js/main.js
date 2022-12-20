@@ -1,4 +1,5 @@
 import "../styles/style.css";
+import "../js/index.js";
 import { menu } from "./menu";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -6,10 +7,6 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 console.log(menu);
-
-document.querySelector(".btn").addEventListener("click", function(){
-    console.log(works);
-});
 
 //create an array of object (menu)
 //create function to inject mennu item

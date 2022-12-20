@@ -3,7 +3,7 @@ const menu = [
     name: "Pizza Slice",
     vegetarian: true,
     price: 2.0,
-    img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+    img: "https://www.nydailynews.com/resizer/sPZblgK2aPHbgC-gWZ7jkTSlmFc=/800x0/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/WVZZD65OMDTBSCJNHGAYFCGHSU.jpg",
     inStock: true,
   },
   {
