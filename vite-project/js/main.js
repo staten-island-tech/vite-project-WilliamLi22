@@ -1,4 +1,5 @@
 import "../styles/style.css";
+import { DOMSelectors } from "./dom";
 import "../js/index.js";
 import { menu } from "./menu";
 import AOS from "aos";
@@ -8,12 +9,12 @@ AOS.init();
 
 console.log(menu);
 
-menu.forEach((menu) => {
+menu.forEach((food) => {
   DOMSelectors.box.insertAdjacentHTML(
-    "afterbegin",
-    `<div class="card">
-        <h2>Name: ${menu.name}</h2>
-        <img src="${menu.img}" alt="">
+    "beforeend",
+    `<div class="inner">
+        <h2>Name: ${food.name}</h2>
+        <img src="${food.img}" alt="">
         </div>`
   );
 });
