@@ -5,15 +5,31 @@ import { menu } from "./menu";
 
 console.log(menu);
 
-menu.forEach((food) => {
+function card(x) {
+  x.forEach((food) => {
+    DOMSelectors.box.insertAdjacentHTML(
+      "beforeend",
+      `<div class="inner">
+          <h2>${food.name}</h2>
+          <img class="foodimg" src="${food.img}" alt="">
+          <h3>${food.price} Dollars</h3>
+          </div>`
+    );
+  });
+}
+
+/* menu.forEach((food) => {
   DOMSelectors.box.insertAdjacentHTML(
     "beforeend",
     `<div class="inner">
         <h2>${food.name}</h2>
-        <img src="${food.img}" alt="">
+        <img class="foodimg" src="${food.img}" alt="">
+        <h3>${food.price} Dollars</h3>
         </div>`
   );
-});
+}); */
+
+card(menu);
 
 //create an array of object (menu)
 //create function to inject mennu item
