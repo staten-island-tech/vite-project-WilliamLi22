@@ -91,6 +91,15 @@ h5 {
   box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
+.box {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 25%;
+    border-radius: 1.5rem;
+    
+}
+
 /* .animation {
     background-color: blue;
     height: 90vh;
