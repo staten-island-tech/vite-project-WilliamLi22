@@ -91,10 +91,10 @@ h5 {
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
-    width: 20%;
-    background-color: #dc2626;
+    width: 30%;
+    background-color: lightblue;
     margin: 20px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 1.5rem;
 }
 
@@ -111,7 +111,9 @@ h5 {
 .foodimg {
     width: 35rem;
     height: 35rem;
-    
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* .animation {
