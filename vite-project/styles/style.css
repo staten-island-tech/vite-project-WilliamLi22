@@ -1,5 +1,3 @@
-/* @import url(variables.css); */
-
 html, body,*{
     margin: 0;
     padding: 0;
@@ -115,16 +113,3 @@ h5 {
     margin-right: auto;
     margin-left: auto;
 }
-
-/* .animation {
-    background-color: blue;
-    height: 90vh;
-} 
-
-.header-animation {
-    font-size: 60px;
-    color: white;
-    background-color: red;
-    text-align: center;
-}
- */
