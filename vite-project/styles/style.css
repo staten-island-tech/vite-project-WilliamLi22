@@ -71,8 +71,8 @@ h5 {
   padding: 1.5rem 4rem;
   display: inline-block;
   margin: 1rem auto;
-  font-size: 1.75rem;
-  border: none;
+  font-size: 1.5rem;
+  border-color: var(--primary);
   border-radius: 10rem;
   transition: all 0.2s;
 }
