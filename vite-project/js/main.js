@@ -13,111 +13,89 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
-function all() {
-  menu.forEach((menu) => {
+function createCards() {
+  menu.forEach((food) => {
     DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `<div class="inner">
-          <h2>${menu.name}</h2>
-          <img class="foodimg" src="${menu.img}" alt="">
-          <h3>${menu.price} Dollars</h3>
+          <h2>${food.name}</h2>
+          <img class="foodimg" src="${food.img}" alt="">
+          <h3>${food.price} Dollars</h3>
           </div>`
     );
   });
 }
 
-all();
+createCards();
 
-function filterPopular() {
-  menu
-    .filter((menu) => menu.popular == "yes")
-    .forEach((menu) => {
+document.querySelector("#all").addEventListener("click", function () {
+  box.innerHTML = "";
+  createCards();
+});
+
+document.querySelector("#popular").addEventListener("click", function () {
+  box.innerHTML = "";
+  const popular = menu
+    .filter((food) => food.popular == "yes")
+    .forEach((food) => {
       DOMSelectors.box.insertAdjacentHTML(
         "beforeend",
         `<div class="inner">
-          <h2>${menu.name}</h2>
-          <img class="foodimg" src="${menu.img}" alt="">
-          <h3>${menu.price} Dollars</h3>
-          </div>`
+        <h2>${food.name}</h2>
+        <img class="foodimg" src="${food.img}" alt="">
+        <h3>${food.price} Dollars</h3>
+        </div>`
       );
     });
-}
-
-function filterVegetarian() {
-  e.filter((menu) => menu.vegetarian == "yes");
-  e.forEach((menu) => {
-    DOMSelectors.box.insertAdjacentHTML(
-      "beforeend",
-      `<div class="inner">
-          <h2>${menu.name}</h2>
-          <img class="foodimg" src="${menu.img}" alt="">
-          <h3>${menu.price} Dollars</h3>
-          </div>`
-    );
-  });
-}
-
-function filterBudget() {
-  e.filter((menu) => menu.budget == "yes");
-  e.forEach((menu) => {
-    DOMSelectors.box.insertAdjacentHTML(
-      "beforeend",
-      `<div class="inner">
-          <h2>${menu.name}</h2>
-          <img class="foodimg" src="${menu.img}" alt="">
-          <h3>${menu.price} Dollars</h3>
-          </div>`
-    );
-  });
-}
-
-function filterDrinks() {
-  e.filter((menu) => menu.drink == "yes");
-  e.forEach((menu) => {
-    DOMSelectors.box.insertAdjacentHTML(
-      "beforeend",
-      `<div class="inner">
-          <h2>${menu.name}</h2>
-          <img class="foodimg" src="${menu.img}" alt="">
-          <h3>${menu.price} Dollars</h3>
-          </div>`
-    );
-  });
-}
-
-function deleteAll() {
-  DOMSelectors.menu.innerHTML = "";
-}
-
-document.getElementById("all").addEventListener("click", function () {
-  clear();
-  all();
 });
 
-document.getElementById("vegetarian").addEventListener("click", function () {
-  clear();
-  filterVegetarian();
+document.querySelector("#vegetarian").addEventListener("click", function () {
+  box.innerHTML = "";
+  const vegetarian = menu
+    .filter((food) => food.vegetarian == "yes")
+    .forEach((food) => {
+      DOMSelectors.box.insertAdjacentHTML(
+        "beforeend",
+        `<div class="inner">
+        <h2>${food.name}</h2>
+        <img class="foodimg" src="${food.img}" alt="">
+        <h3>${food.price} Dollars</h3>
+        </div>`
+      );
+    });
 });
 
-document.getElementById("budget").addEventListener("click", function () {
-  clear();
-  filterBudget();
+document.querySelector("#budget").addEventListener("click", function () {
+  box.innerHTML = "";
+  const budget = menu
+    .filter((food) => food.budget == "yes")
+    .forEach((food) => {
+      DOMSelectors.box.insertAdjacentHTML(
+        "beforeend",
+        `<div class="inner">
+        <h2>${food.name}</h2>
+        <img class="foodimg" src="${food.img}" alt="">
+        <h3>${food.price} Dollars</h3>
+        </div>`
+      );
+    });
 });
 
-document.getElementById("popular").addEventListener("click", function () {
-  clear();
-  filterPopular();
+document.querySelector("#drink").addEventListener("click", function () {
+  box.innerHTML = "";
+  const drink = menu
+    .filter((food) => food.drink == "yes")
+    .forEach((food) => {
+      DOMSelectors.box.insertAdjacentHTML(
+        "beforeend",
+        `<div class="inner">
+        <h2>${food.name}</h2>
+        <img class="foodimg" src="${food.img}" alt="">
+        <h3>${food.price} Dollars</h3>
+        </div>`
+      );
+    });
 });
-
-document.getElementById("drinks").addEventListener("click", function () {
-  clear();
-  filterDrinks();
-});
-
-//create an array of object (menu)
-//create function to inject mennu item
-//iterate (foreach) over array and insert HTML
-//button event listen to filter
 
 //OOP Object oriented programming to encapsulate data/functions and create abstractions (when you take a bunch of code and create a one word function for it, makes code reusable)
 

@@ -5,6 +5,7 @@ const DOMSelectors = {
   budget: document.getElementById("budget"),
   all: document.getElementById("all"),
   box: document.getElementById("box"),
+  clear: ``,
 };
 
 export { DOMSelectors };

@@ -42,6 +42,7 @@ h1{
 
 h2{
     font-size: var(--h2);
+    margin-top: auto;
 }
 
 h3{
@@ -83,8 +84,6 @@ h5 {
 
 .inner {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
     flex-direction: column;
     width: 30%;
     background-color: var(--primary);
@@ -109,8 +108,6 @@ h1 {
 .box {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row;
     justify-content: space-evenly;
     width: 100vw;
 }
