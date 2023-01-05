@@ -17,7 +17,7 @@ function createCards() {
   menu.forEach((food) => {
     DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
-      `<div class="inner">
+      `<div class="inner" data-aos="flip-up">
           <h2>${food.name}</h2>
           <img class="foodimg" src="${food.img}" alt="">
           <h3>${food.price} Dollars</h3>
